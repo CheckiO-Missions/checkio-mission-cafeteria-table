@@ -1,20 +1,37 @@
 <!-- Describe task in general -->
 <!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
 <p style="text-align: justify;">
-    Sum two passed ints
+    The school cafeteria has a long rectangular table. Students can sit along long sides at the table and each student sits facing a student sitting on the opposite side of him.
+</p>
+
+<p style="text-align: justify;">
+    Luiza's group of friends has an even number of members and they would like to sit all together at the table. However, this is very difficult to coordinate, since the cafeteria is always crowded. Therefore, the group of friends decided that they will be happy if each member of the group is seated facing another member of the group.
+</p>
+
+<p style="text-align: justify;">
+    The friends sat down and are already evenly divided between the two sides of the table, but not all members of the group are seated in front of another member. Luckily, the group of friends developed a plan: a member can ask to switch seats with one of the students sitting in the chairs next to his or her (i.e., the students sitting immediately to the left and right of him or her who are right next to the table, if any). Thus, a member can move left or right on his side of the table using various exchanges, always with one of the current neighbors. The plan of the group of friends is to carry out these exchanges until each member of the group is seated facing another member of the group.
+</p>
+
+<p style="text-align: justify;">
+    In the following example, the members of the group on the upper side of the table are in positions 2 and 5, while the members on the lower side of the table are in positions 1 and 3. The group members are gathered in pairs after 3 exchanges. Exact positions may vary, but it is possible to verify that this is the smallest possible amount (i.e. it is not impossible to complete the group plan with 2 or fewer exchanges).
 </p>
 
 <p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    <img  title="example" src="{{MEDIA}}cafeteria.svg" alt="example" style="max-height: 400px"/>
 </p>
+
+<p style="text-align: justify;">
+    Luiza's friends want to be happy without making too much of a mess. Therefore, they would like to make as few trade-offs as possible to carry out the group's plan. Luiza asked for your help: given the initial positions where the members of the group are seated, determine the minimum number of exchanges necessary between students sitting in neighboring chairs so that each member of the group of friends sits in front of another member of the group.
+</p>
+
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> Two <span translate="repeat">{% if is_js %}arrays{% else %}lists{% endif %}</span> of integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> Integer. 
 </p>
 
 
